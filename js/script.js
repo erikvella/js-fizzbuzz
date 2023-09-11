@@ -19,10 +19,16 @@ Applica stili differenti agli elementi aggiunti al DOM, a seconda che il valore 
 // 2 applicare uno stile ai multipli di 3 , 5 o entrambi (uso 3 stili differenti)
 const boxesContainer = document.querySelector('.box-container')
 for(let i = 0 ; i < 100 ; i++) {
-  console.log('i = ' , i);
-   if(i % 3 === 0){
-     i = 'buzz';
-     console.log(i);
-   }
-}
+  console.log(i + 1);
+ 
+ 
+  // const box = document.createElement('div');
+  // box.classList.add('box');
+  // box.append(i + 1)
+
+
+
+
+    
+ }
 
