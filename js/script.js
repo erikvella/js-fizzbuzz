@@ -18,11 +18,11 @@ Applica stili differenti agli elementi aggiunti al DOM, a seconda che il valore 
 
 // 2 applicare uno stile ai multipli di 3 , 5 o entrambi (uso 3 stili differenti)
 const boxesContainer = document.querySelector('.box-container')
-for(let i = 1 ; i < 101 ; i++) {
+for(let i = 0 ; i < 100 ; i++) {
   console.log('i = ' , i);
+   if(i % 3 === 0){
+     i = 'buzz';
+     console.log(i);
+   }
 }
 
-if(i % 3 === 0){
-  i = 'buzz';
-  console.log(i);
-}
