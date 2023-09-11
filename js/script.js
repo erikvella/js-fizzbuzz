@@ -11,3 +11,18 @@ Abbiamo visto qualcosa di particolare che possiamo usare?
 Crea un container nel DOM , aggiungendo (attraverso la funzione `append()`) un elemento html con il numero o la stringa corretta da mostrare.
 Applica stili differenti agli elementi aggiunti al DOM, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.*/
 
+
+
+
+// 1 generare una sequenza di numeri da 1 a 100 usando un contatore
+
+// 2 applicare uno stile ai multipli di 3 , 5 o entrambi (uso 3 stili differenti)
+const boxesContainer = document.querySelector('.box-container')
+for(let i = 1 ; i < 101 ; i++) {
+  console.log('i = ' , i);
+}
+
+if(i % 3 === 0){
+  i = 'buzz';
+  console.log(i);
+}
