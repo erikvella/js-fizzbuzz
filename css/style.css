@@ -1,11 +1,31 @@
 /*  */
+body{
+  background-color: blue;
+}
 
-
-
+h1{
+  font-size: 3rem;
+  color: rgb(134, 3, 3);
+}
 
 
 .box{
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
+  width: 160px;
+  height: 160px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 100px;
+  margin: 15px 0;
+}
+
+.bg-red{
+  background-color: red;
+}
+
+.bg-green{
+  background-color: rgb(1, 179, 1);
+}
+
+.bg-yellow{
+  background-color: yellow;
 }

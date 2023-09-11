@@ -24,17 +24,25 @@ for(let i = 1 ; i <= 100 ; i++) {
  
   const box = document.createElement('div');
   box.classList.add('box');
-  box.append(i);
-
+  box.append(i + 1);
+  boxesContainer.append(box);
+  
 
 if(i % 3 === 0){
-  console.log('buzz')
+  console.log('Buzz');
+  box.classList.add('bg-green');
+  box.append('Buzz');
 }
 if(i % 5 === 0){
-  console.log('fizz')
+  console.log('Fizz');
+  box.classList.add('bg-red');
+  box.append('Fizz');
 }  
 if(i % 3 === 0 && i % 5 === 0)  {
-  console.log('buzzfizz')
+  console.log('BuzzFizz');
+  box.classList.add('bg-yellow');
+  box.append('BuzzFizz');
 }
+
  }
 
