@@ -27,7 +27,9 @@ for(let i = 0 ; i < 100 ; i++) {
   // box.append(i + 1)
 
 
-
+if(i % 3 === 0){
+  console.log(i + 10)
+}
 
     
  }
