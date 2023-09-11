@@ -22,16 +22,19 @@ for(let i = 1 ; i <= 100 ; i++) {
   console.log(i);
  
  
-  // const box = document.createElement('div');
-  // box.classList.add('box');
-  // box.append(i + 1)
+  const box = document.createElement('div');
+  box.classList.add('box');
+  box.append(i);
 
 
 if(i % 3 === 0){
-  console.log(i + 10)
+  console.log('buzz')
 }
 if(i % 5 === 0){
   console.log('fizz')
-}    
+}  
+if(i % 3 === 0 && i % 5 === 0)  {
+  console.log('buzzfizz')
+}
  }
 
