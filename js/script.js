@@ -23,26 +23,27 @@ for(let i = 1 ; i <= 100 ; i++) {
  
  
   const box = document.createElement('div');
-  box.classList.add('box');
-  box.append(i + 1);
-  boxesContainer.append(box);
+  box.className = 'box';
   
-
-if(i % 3 === 0){
+ 
+  
+  if(i % 15 === 0)  {
+    console.log('BuzzFizz');
+    box.classList.add('bg-yellow');
+    box.append('BuzzFizz');
+  }else if(i % 3 === 0){
   console.log('Buzz');
   box.classList.add('bg-green');
   box.append('Buzz');
-}
-if(i % 5 === 0){
+}else if(i % 5 === 0){
   console.log('Fizz');
   box.classList.add('bg-red');
   box.append('Fizz');
-}  
-if(i % 3 === 0 && i % 5 === 0)  {
-  console.log('BuzzFizz');
-  box.classList.add('bg-yellow');
-  box.append('BuzzFizz');
+}  else{
+  console.log(i);
+  box.append(i);
 }
+boxesContainer.append(box);
 
  }
 
